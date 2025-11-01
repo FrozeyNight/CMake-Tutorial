@@ -1,8 +1,12 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
+#include <mainConfig.h>
 
-int main(){
-	std::cout << "Hello, World!";
+int main(int argc, char* argv[]){
+	std::cout << "Hello, World!\n";
+
+    // argv[0] will always be the name of the program
+    std::cout << argv[0] << " Version " << MAIN_VERSION_MAJOR << "." << MAIN_VERSION_MINOR << '\n';
 
 	GLFWwindow *window;
 
